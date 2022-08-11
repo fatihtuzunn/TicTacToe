@@ -11,5 +11,5 @@ HTML, CSS, JavaScript
   
 ## Demo
 
-Projeye ulaşmak için [tıklayınız](https://www.google.com "Google's Homepage")
+Projeye ulaşmak için [tıklayınız](https://papaya-monstera-fd5c9e.netlify.app/ "TicTacToe Game")
   

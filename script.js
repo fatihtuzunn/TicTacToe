@@ -1,6 +1,7 @@
 const d = document;
 let squares = d.querySelectorAll(".square");
 let info = d.querySelector(".info")
+let restartbtn= d.querySelector(".restart")
 
 let att=0;
 const data=Array(9).fill(null);
@@ -31,7 +32,7 @@ function detectwin() {
         [0, 4, 8],
         [2, 4, 6],
       ];
-      for (let i = 0; i < seri.length; i++) {
+    for (let i = 0; i < seri.length; i++) {
         const [a, b, c] = seri[i];
         if (data[a] && data[a] === data[b] && data[a] === data[c]) {
           
@@ -42,6 +43,25 @@ function detectwin() {
             info.innerHTML =`${data[a]} OYUNU KAZANDI`
             console.log(data[a])
         }
-      }
+    }
+
+    if(att>8){
+        info.innerHTML ="BERABERE"
+    }
+
+}
+
+
+restartbtn.addEventListener("click", gameOver)
+
+function gameOver() {
+    att=0;
+    data.fill(null);
+    squares.forEach(square=> {
+        square.innerHTML = "";
+        square.disabled = false;
+    })
+
+    info.innerHTML =""
 
 }

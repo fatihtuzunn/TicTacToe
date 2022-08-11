@@ -2,6 +2,11 @@ body{
     background: linear-gradient(90deg,#CCFFFF,#FFCCCC );
 }
 
+header{
+    margin-top: 5rem;
+    text-align: center;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -30,4 +35,9 @@ main{
     
     margin-top: 5rem;
     font-size: 30px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 5rem;
 }
